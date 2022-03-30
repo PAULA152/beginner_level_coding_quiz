@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+
+/*Universal style*/
+* {
+  box-sizing: border-box;
+  background-color: blue;
+  color: #050505;
+  font-family: "Red Hat Mono";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(40, 0, 92);
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+footer {
+  font-size: 24px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  margin: 8px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+label {
+  font-size: 24px;
+  margin: auto;
+  padding: 8px;
+}
+
+p {
+  font-size: 24px;
+  margin: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.questionLine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.questionLine label:hover {
+  cursor: pointer;
+  border: 2px solid #050505;
+}
+
+#title {
+  text-decoration: underline overline #050505;
+}
+
+#card1,
+#card2 {
+  background-color: blue;
+  margin: auto;
+  padding: auto;
+  width: 60%;
+}
+
+#initialsBox {
+  background-color: blue;
+  border-color: #050505;
+  height: 48px;
+  font-size: 36px;
+  text-align: center;
+  width: 144px;
+}
+
+.button {
+  border: none;
+  background-color: blue;
+  cursor: pointer;
+  font-size: 48px;
+  font-weight: 900;
+  color: blue;
+  text-shadow: 2px 0 0 #050505, -2px 0 0 #050505, 0 2px 0 #050505,
+    0 -2px 0 #050505, 1px 1px #050505, -1px -1px 0 #050505, 1px -1px 0 #050505,
+    -1px 1px 0 #050505;
+}
+
+.button:hover {
+  color: #050505;
+}
+
+#multipleChoice {
+  justify-content: space-around;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>PopQuiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="start-window">
+        <div class="score">
+            <span id="current-score">0</span>
+            <span>/</span>
+            <span id="total-score">5</span>
+        </div>
+        <!-- <div id="timer-element"></div> -->
+        <button onclick="myFunction()">Start Quiz</button>
+    </section>
+
+    <section id="quiz">
+        <div class="card" id="question-one" style="display:none">
+            <h2 class="question-text">Which is not a JavaScript data type?</h2>
+            <button class="btn btn-wrong" id="wrong-answer">Number</button>
+            <button class="btn btn-wrong" id="wrong-answer">String</button>
+            <button class="btn btn-wrong" id="wrong-answer">Boolean</button>
+            <button class="btn btn-correct" id="correct-answer-1">Defined</button>
+        </div>
+
+        <div class="card" id="question-two" style="display:none">
+            <h2 class="question-text">Which language runs in a web browser?</h2>
+            <button class="btn btn-wrong" id="wrong-answer">Python</button>
+            <button class="btn btn-correct" id="correct-answer-2">JavaScript</button>
+            <button class="btn btn-wrong" id="wrong-answer">Cobra</button>
+            <button class="btn btn-wrong" id="wrong-answer">Java</button>
+        </div>
+
+        <div class="card" id="question-three" style="display:none">
+            <h2 class="question-text">What does CSS stand for?</h2>
+            <button class="btn btn-wrong" id="wrong-answer">Central Style Sheets</button>
+            <button class="btn btn-wrong" id="wrong-answer">Common Style Sheets</button>
+            <button class="btn btn-correct" id="correct-answer-3">Cascading Style Sheets</button>
+            <button class="btn btn-wrong" id="wrong-answer">Cascading Simple Sheets</button>
+        </div>
+
+        <div class="card" id="question-four" style="display:none">
+            <h2 class="question-text">What year was JavaScript launched?</h2>
+            <button class="btn btn-wrong" id="wrong-answer">1990</button>
+            <button class="btn btn-wrong" id="wrong-answer">1996</button>
+            <button class="btn btn-wrong" id="wrong-answer">1992</button>
+            <button class="btn btn-correct" id="correct-answer-4">1995</button>
+        </div>
+
+        <div class="card" id="question-five" style="display:none">
+            <h2 class="question-text">What does HTML stand for?</h2>
+            <button class="btn btn-correct" id="correct-answer-5">Hypertext Markup Language</button>
+            <button class="btn btn-wrong" id="wrong-answer">Hyperweb Markup Language</button>
+            <button class="btn btn-wrong" id="wrong-answer">Hypertext Machine Language</button>
+            <button class="btn btn-wrong" id="wrong-answer">Hyperpage Markdown Language</button>
+        </div>
+
+        <div class="card" id="loading" style="display:none">
+            <h2>Loading...</h2>
+        </div>
+
+        <div class="card" id="results" style="display:none">
+            <h2 id="results-string"></h2>
+        </div>
+
+    </section>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
